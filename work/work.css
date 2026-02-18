@@ -1,0 +1,398 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+.backimg1 {
+    background-image: url("assets/backgroundImg/Text Container (1).png");
+    width: 100%;
+    height: 70vh;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px;         
+    color: white;            
+    position: relative;
+}
+
+.backimg1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3); 
+    z-index: 1;
+}
+
+.backimg1 h2,
+.backimg1 p{
+    position: relative;
+    z-index: 2; 
+    margin: 0;
+
+}
+
+.backimg1 h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.backimg1 p{
+    font-size: 20px;
+    max-width: 600px;
+}
+
+
+@media(max-width: 576px){
+    .backimg1{
+        height: auto;      
+        padding: 30px 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .backimg1 h2{
+        font-size: 20px;
+    }
+
+    .backimg1 p{
+        font-size: 10px;
+        max-width: 100%;
+        
+    }
+}
+
+.backimg2 {
+    background-image: url("assets/backgroundImg/Text Container (1).png"); /* background image path */
+    width: 100%;
+    height: 70vh;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    padding: 40px;
+    color: white;
+    position: relative;
+    text-align: center;      
+}
+
+
+.backimg2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.backimg2 h1.hero-heading2,
+.backimg2 p.hero-text2,
+.backimg2 .hero-btn{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: white; 
+
+}
+
+
+.backimg2 h1.hero-heading2{
+    font-size: 30px;  
+    margin-bottom: 15px;
+        margin-left: 20%;
+    
+}
+
+.backimg2 p.hero-text2{
+    font-size: 14px;
+    max-width: 600px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+}
+
+
+.backimg2 .hero-btn{
+    background-color: #c0a407;
+    color:black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 40%;
+}
+
+.backimg2 .hero-btn:hover{
+    transform: scale(1.05);
+    background-color:  #aa9104;
+}
+
+
+@media(max-width: 576px){
+    .backimg2{
+        height: auto;
+        padding: 30px 15px;
+    text-align: center;
+    }
+
+    .backimg2 h1.hero-heading2{
+        font-size: 17px;
+        margin-left: 20px;
+    }
+
+    .backimg2 p.hero-text2{
+        font-size: 10px;
+        max-width: 100%;
+        margin-left: 25px;
+    }
+
+    .backimg2 .hero-btn{
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-left: 27%;
+    
+    }
+}
+
+
+
+.heading1 {
+    margin-top: 20px;
+    color: white;
+    font-size: 2.5rem; 
+    margin-left: 50px;
+}
+
+.para1 {
+    margin-top: 20px;
+    color: aliceblue;
+    margin-left: 50px;
+    font-size: 1rem;
+}
+
+.btn1 {
+    color: aliceblue;
+    background-color: #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #3b3b3b;
+    margin-left: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #555;
+}
+
+.btn2 {
+    margin-top: 30px;
+    background-color: #1A1A1A;
+    color: #797878;
+    padding: 20px;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 1.25rem;
+    border: 1px solid #252525;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #252525;
+}
+
+
+.card1 {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.card {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.Fimg,
+.Simg,
+.Timg {
+    margin-top: 30px;
+    width: calc(100% - 60px);
+    margin-left: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Fimg:hover,
+.Simg:hover,
+.Timg:hover {
+    transform: scale(1.03);
+}
+
+.para2,
+.para3 {
+    margin-top: 15px;
+    color: #797878;
+    line-height: 1.6;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+
+
+.card2 {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.para4,
+.para5 {
+    margin-top: 15px;
+    color: #797878;
+    line-height: 1.6;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+
+
+
+.card3 {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.para6,
+.para7 {
+    margin-top: 15px;
+    color: #797878;
+    line-height: 1.6;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+.backimg2 {
+    background-image: url("assets/backgroundImg/Text\ Container\ \(1\).png");
+    width: 100%;
+    height: 70vh;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .heading1 {
+        font-size: 1.8rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .para1,
+    .para2,
+    .para3,
+    .para4,
+    .para5,
+    .para6,
+    .para7 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    .btn1 {
+        margin-left: 10px;
+        padding: 8px 16px;
+    }
+
+    .btn2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 15px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+
+    .card1,
+    .card2,
+    .card3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .Fimg,
+    .Simg,
+    .Timg {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    
+    .backimg1,
+    .backimg2 {
+        height: 50vh;
+        min-height: 100px;
+        padding: 20px 10px;
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+           height: auto;
+    }
+}
