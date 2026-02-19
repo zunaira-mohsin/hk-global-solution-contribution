@@ -1,0 +1,165 @@
+ 
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.backimg1{
+        height: auto;
+        padding: 50px 25px;
+    }
+
+    .backimg1 h2{
+        font-size: 28px;
+        max-width: 450px;
+        margin: 0 auto 12px;
+        line-height: 1.2;
+    }
+
+    .backimg1 p{
+        font-size: 15px;
+        max-width: 500px;
+        margin: 0 auto 15px;
+        line-height: 1.5;
+    }
+.backimg1{
+    width: 100%;
+    background-image: url("assets/Text\ Container\ \(1\).png");
+    height: 70vh;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.backimg1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures image and text are vertically centered */
+
+    padding: 50px;
+    border-radius: 15px;
+    gap: 50px;
+    flex-wrap: wrap; /* Makes it responsive for smaller screens */
+}
+
+.textCon {
+    max-width: 600px;
+    flex: 1; /* Lets text take remaining space */
+}
+
+.heading1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.para1 {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.logoCon {
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 350px; /* Slightly bigger width */
+    height: 350px; /* Slightly bigger height */
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 0 18px #fdd835, 0 0 30px #fdd835, 0 0 50px #fdd835; /* Glowing yellow effect */
+}
+.heading2{
+    color: white;
+    font-size: 45px;
+    margin-left: 50px;
+}
+.numbers-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 80px 50px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 50px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+}
+
+.desc {
+    font-size: 14px;
+    color: #aaa8a8;
+    line-height: 1.7;
+}
+
+
+
+@media (max-width: 992px) {
+
+    /* Hero sections */
+    .backimg1 {
+        height: auto;
+        padding: 50px 25px;
+    }
+
+    .backimg1  {
+        font-size: 20px;
+        max-width: 450px;
+        margin: 0 auto 12px;
+        line-height: 1.2;
+    }
+
+    .backimg1 p {
+        font-size: 13px;
+        max-width: 500px;
+        margin: 0 auto 15px;
+        line-height: 1.5;
+    }
+}
